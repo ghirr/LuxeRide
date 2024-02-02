@@ -21,6 +21,7 @@ import {NzFormModule} from'ng-zorro-antd/form'
 import {NzButtonModule} from 'ng-zorro-antd/button'
 import {NzInputModule} from 'ng-zorro-antd/input'
 import {NzLayoutModule} from 'ng-zorro-antd/layout'
+import { NzMessageServiceModule } from 'ng-zorro-antd/message';
 
 registerLocaleData(en);
 
@@ -43,7 +44,8 @@ registerLocaleData(en);
     NzFormModule,
     NzButtonModule,
     NzInputModule,
-    NzLayoutModule
+    NzLayoutModule,
+    NzMessageServiceModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }
